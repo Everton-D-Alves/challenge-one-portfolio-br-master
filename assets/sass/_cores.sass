@@ -1,0 +1,24 @@
+$font: 18pt!default
+@if $font < 18pt or $font > 20pt
+    @error "Valor inválido!"
+@else 
+    @debug "Compilado a 1ª parte com sucesso!"
+@mixin cor1 
+    @warn "Depreciado!"
+    background-color: orange
+    color: green 
+    font-style: oblique 
+    font-size: 19pt
+    font-family: 'Courier New', Courier, monospace
+    border: green 10px solid 
+@mixin cor2 
+    background-color: gray 
+    color: white
+    font-style: italic 
+    font-size: $font
+    font-family: "Nimbus Roman"
+@mixin cor3 
+    background-image: url("../img/rio.jpg")
+    color: yellow
+    text-shadow: 1px 1px 15px black
+    font: normal 18pt Arial

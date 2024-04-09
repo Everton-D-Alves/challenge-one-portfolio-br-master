@@ -1,0 +1,21 @@
+@forward "total"
+@use "total" as t 
+body 
+    @include t.cor3 
+    @include t.dm 
+    @include t.dp
+    padding: calc(t.$total + t.$final)
+details 
+    display: flex 
+    cursor: pointer 
+ul 
+    list-style: none
+    text-align: center
+    padding: 0px
+    li
+        @include t.dp
+    a 
+        color: yellow 
+input, button
+    width: 500px
+    height: 50px
