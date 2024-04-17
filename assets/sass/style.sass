@@ -5,6 +5,26 @@ body
     @include t.dm 
     @include t.dp
     padding: calc(t.$total + t.$final)
+// Defina variáveis para tamanhos de tela comuns
+$mobile: 768px
+$tablet: 1024px
+$desktop: 1200px
+
+// Exemplo de @media query usando variáveis
+@media screen and (max-width: $mobile)
+  // Estilos para telas menores que 768px
+    body
+    font-size: 14px
+
+@media screen and (min-width: $tablet) and (max-width: $desktop)
+  // Estilos para telas entre 1024px e 1200px
+    body
+    font-size: 16px
+
+@media screen and (min-width: $desktop)
+  // Estilos para telas maiores que 1200px
+    body
+    font-size: 18px
 details 
     display: flex 
     cursor: pointer 
@@ -19,3 +39,4 @@ ul
 input, button
     width: 500px
     height: 50px
+
