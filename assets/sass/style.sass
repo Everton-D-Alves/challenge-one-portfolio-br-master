@@ -11,20 +11,20 @@ $tablet: 1024px
 $desktop: 1200px
 
 // Exemplo de @media query usando variáveis
-@media screen and (max-width: $mobile)
+@media(max-width: $mobile)
   // Estilos para telas menores que 768px
     body
-    font-size: 14px
+      font-size: 14px
 
-@media screen and (min-width: $tablet) and (max-width: $desktop)
+@media(min-width: $tablet)
   // Estilos para telas entre 1024px e 1200px
     body
-    font-size: 16px
+      font-size: 20px
 
-@media screen and (min-width: $desktop)
+@media(min-width: $desktop)
   // Estilos para telas maiores que 1200px
     body
-    font-size: 18px
+      font-size: 25px
 details 
     display: flex 
     cursor: pointer 
