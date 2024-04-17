@@ -1,1 +1,1 @@
-alert("Meu email: evrtn2021@gmail.com");
+console.log("Meu email: evrtn2021@gmail.com");
